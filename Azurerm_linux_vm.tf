@@ -8,8 +8,8 @@ variable "vm_name_pfx" {
 
 resource "azurerm_linux_virtual_machine" "RG-MIR-LABTERRA" {
   name                            = var.vm_name_pfx
-  resource_group_name             = data.azurerm_resource_group.RG-MIR-LABTERRA.name
-  location                        = data.azurerm_resource_group.RG-MIR-LABTERRA.location
+  resource_group_name             = data.azurerm_resource_group.RG-MIR-LABTERRA
+  location                        = data.azurerm_resource_group.RG-MIR-LABTERRA.westeurope
   size                            = "Standard_B1s" #allowed: Standard_B1ls Standard_B1ms Standard_B1s Standard_B2s Standard_D2s_v3 Standard_DS1_v2
   computer_name                   = "myvm"
   admin_username                  = "adminuser"
