@@ -9,9 +9,9 @@ resource "azurerm_network_interface" "RG-MIR" {
     private_ip_address_allocation = "Dynamic"
   }
 
-#   tags = {
-#     environment = "Ecole_CAP_Azure"
-#     session     = "1"
-#     groupe      = "0"
-#   }
-# }
+   tags = {
+    environment = "Ecole_CAP_Azure"
+     session     = "1"
+     groupe      = "0"
+   }
+ }

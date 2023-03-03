@@ -24,21 +24,21 @@ resource "azurerm_linux_virtual_machine" "RG-MIR" {
     azurerm_network_interface.RG-MIR.id,
   ]
 
-#   os_disk {
-#     name                 = "my-terraform-os-disk-${var.vm_name_pfx}"
-#     caching              = "ReadWrite"
-#     storage_account_type = "Standard_LRS"
-#   }
+   os_disk {
+     name                 = "my-terraform-os-disk-${var.vm_name_pfx}"
+     caching              = "ReadWrite"
+     storage_account_type = "Standard_LRS"
+   }
 
-#   source_image_reference {
-#     publisher = "Canonical"
-#     offer     = "UbuntuServer"
-#     sku       = "16.04-LTS"
-#     version   = "latest"
-#   }
-#   tags = {
-#     environment = "Ecole_CAP_Azure"
-#     session     = "1"
-#     groupe      = "0"
-#   }
-# }
+   source_image_reference {
+     publisher = "Canonical"
+     offer     = "UbuntuServer"
+     sku       = "16.04-LTS"
+     version   = "latest"
+   }
+   tags = {
+     environment = "Ecole_CAP_Azure"
+     session     = "1"
+     groupe      = "0"
+  }
+ }
