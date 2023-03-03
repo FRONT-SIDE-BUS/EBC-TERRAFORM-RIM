@@ -1,4 +1,4 @@
-resource "azurerm_network_interface" "example" {
+resource "azurerm_network_interface" "RG-MIR-LABTERRA" {
   name                = "${var.vm_name_pfx}-nic"
   location            = data.azurerm_resource_group.RG-MIR-LABTERRA.westeurope
   resource_group_name = data.azurerm_resource_group.RG-MIR-LABTERRA
