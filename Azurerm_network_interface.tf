@@ -1,7 +1,7 @@
 resource "azurerm_network_interface" "example" {
   name                = "${var.vm_name_pfx}-nic"
-  location            = data.azurerm_resource_group.GroupeN.location
-  resource_group_name = data.azurerm_resource_group.GroupeN.name
+  location            = data.azurerm_resource_group.RG-MIR-LABTERRA.location
+  resource_group_name = data.azurerm_resource_group.RG-MIR-LABTERRA.name
 
   ip_configuration {
     name                          = "internal"
